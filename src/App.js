@@ -6,6 +6,7 @@ import AppNavbar from './Components/AppNavbar';
 import TodoItem from './Components/TodoItem';
 import {Provider} from 'react-redux';
 import store from './Store';
+import ItemModal from './Components/ItemModal';
 class App extends Component {
   render() {
     return (
@@ -14,6 +15,7 @@ class App extends Component {
       <div className="App">
         <AppNavbar/> 
         <Container>
+          <ItemModal/>
           <TodoItem/> 
         </Container>
       </div>
